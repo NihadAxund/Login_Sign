@@ -1,0 +1,19 @@
+﻿<Window x:Class="wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf"
+       xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="550" AllowsTransparency="True" Background="#FF050F1A" WindowStyle="None" WindowStartupLocation="CenterScreen" >
+    <Grid>
+
+        <Border>
+            <Image gif:ImageBehavior.AnimatedSource="Resources\3WyW.gif"
+           gif:ImageBehavior.AutoStart="True"
+           gif:ImageBehavior.RepeatBehavior="1"/>
+        </Border>
+
+    </Grid>
+</Window>
