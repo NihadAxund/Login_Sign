@@ -1,7 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
-using System;
-using System.Data.SqlClient;
-using System.IO;
+﻿using System.Data.SqlClient;
 
 namespace wpf
 {
@@ -9,9 +6,18 @@ namespace wpf
     {
        private string connectionString = "Data Source=NIHAD; Initial Catalog=Userpassword; Integrated Security=SSPI";
         SqlConnection sqlConnection = null;
+        //private static void abc()
+        //{
+        //    Microsoft.Extensions.Configuration.ConfigurationBuilder builder2 = new();
+        //    builder2.SetBasePath(System.IO.Directory.GetCurrentDirectory());
+        //    builder2.AddJsonFile("appconfig.json");
+        //}
        public Sqlclass()
         {
-             sqlConnection = new SqlConnection(connectionString);
+           
+            //abc()
+
+            sqlConnection = new SqlConnection(connectionString);
         }
         public bool Check(string UserName,string password)
         {
